@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Assignment - Institute Website - Sarnav Dutta</title>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body class="body">
+<header class="mainheader">
+	<img src="images/logo.png">
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="course.html">Courses</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			
+		</ul> 
+	</nav>
+</header>
+<br>
+<div class="slideshow-container">
+
+<div class="iambrpslides fade">
+  <div class="numbertext">01 / 03</div>
+  <img src="./images/a.jpg">
+ </div>
+
+<div class="iambrpslides fade">
+  <div class="numbertext">02 / 03</div>
+  <img src="./images/b.jpeg">
+  </div>
+
+<div class="iambrpslides fade">
+  <div class="numbertext">03 / 03</div>
+  <img src="./images/c.jpg">
+</div>
+
+</div>
+
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("iambrpslides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2500); // This is for Changing image every 2.5 seconds
+}
+</script>
+<div class="mainContent">
+	<div class="Content">
+		<article class="topContent">
+			<header>
+			 <h3><a href="#" title="My First Post">About Us</a>	</h3>  
+			</header>
+			<content>
+<p>Established in the year 2001, Techno Main Salt Lake stands tall as the best and most acclaimed academic institute in Asia. A college with a difference, this institute is presently running variety of UG programs and a variety of PG courses as well. Situated in Salt Lake, Kolkata- the IT Hub of West Techno India is a premier abode for aspirants across the nation; top rank holders in prestigious competitive examinations such as WBJEE and JEE(Mains) have trusted this institute over the years.
+</p>
+			</content>
+		</article>
+
+		<article class="bottomContent">
+			<header>
+			<h3><a href="#" title="Pathway Programme">Our Goal</a>	</h3>  
+			</header>
+			<content>
+<p>This college strives for excellence by virtue of the high quality education imparted to the students, state-of-the-art research infrastructure, modern technology enabled teaching-learning tools, vigorous industry driven curricula, exceptional laboratory facilities and other ample amenities. Be a part of this elite group for it's a place where passion and creativity join hands ascertaining a glorious future ahead!
+</p>
+			</content>
+		</article>
+
+		
+	</div>
+</div>
+<aside class="top-sidebar">
+	<article>
+		<h3>Join us today!</h3>
+		<p>Embark on an exciting learning journey with Techno Main Saltlake, providing over 50+ courses</p>
+	</article>
+</aside>
+
+<aside class="middle-sidebar">
+	<article>
+		<h3>Your Boardroom Qualification</h3>
+		<p>A Degree to stand out from the crowd…...</p>
+	</article>
+</aside>
+
+<aside class="buttom-sidebar">
+	<article>
+		<h3>Be ahead of your peers</h3>
+		<p>Fast track your education with Techno Main Saltlake</p>
+	</article>
+</aside>
+<footer class="mainFooter">
+	<p>Copyright &copy <a href="https://www.facebook.com/sarnavdutta">Sarnav Dutta</a> </p>
+</footer>
+</body>
+</html>
