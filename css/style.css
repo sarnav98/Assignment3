@@ -1,3 +1,7 @@
+h1
+{
+  text-align: center;
+}
 h2{
  background-color: #FEFFED;
  padding: 30px 35px;
@@ -129,6 +133,7 @@ color:#fff;
 margin: 0 auto;
 width: 70%;	 
 clear: both;
+text-align: center;
 }
 .mainheader img{
 	width: auto;
@@ -142,6 +147,7 @@ line-height: 40px;
 border-radius: 5px;
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px;
+text-align: center;
 }
 .mainheader nav ul {
 list-style-type: none;
@@ -164,6 +170,7 @@ height: 20px;
 {
  background-color: #cf5c3F;
  text-shadow: none;
+ text-align: center;
 }
 .mainheader nav ul li a{
 	border-radius: 5px;
